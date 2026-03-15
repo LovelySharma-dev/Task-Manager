@@ -1,0 +1,105 @@
+# =========================
+
+# Node.js / Backend
+
+# =========================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+
+logs/
+*.log
+
+# Runtime data
+
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Build output
+
+dist/
+build/
+
+# Coverage
+
+coverage/
+
+# Cache
+
+.cache/
+.parcel-cache/
+
+# =========================
+
+# Frontend (React / Vite)
+
+# =========================
+
+node_modules/
+dist/
+build/
+
+# Vite cache
+
+.vite/
+
+# Next.js / other frameworks
+
+.next/
+out/
+
+# React Native
+
+.expo/
+
+# =========================
+
+# OS Files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# IDE / Editor
+
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+
+# Temporary Files
+
+# =========================
+
+*.tmp
+*.temp
+
+# =========================
+
+# Optional
+
+# =========================
+
+.env.example
