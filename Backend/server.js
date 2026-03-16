@@ -4,6 +4,7 @@ import "dotenv/config";
 import { connectDB } from "./config/db.js";
 const app = express();
 import userRouter from "./routes/user.Router.js";
+import taskRouter from "./routes/task.Router.js";
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -14,7 +15,7 @@ connectDB();
 
 // !Routes
 app.use("/api/user", userRouter);
-
+app.use("/api/tasks", taskRouter);
 app.get("/", (req, res) => {
   res.send("API Working");
 });
