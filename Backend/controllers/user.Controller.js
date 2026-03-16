@@ -1,4 +1,4 @@
-import userModel from "../models/user.model";
+import userModel from "../models/user.model.js";
 import validator from "validator";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
@@ -13,6 +13,7 @@ const createToken = (userId) =>
 export async function registerUser(req, res) {
   const { username, email, password } = req.body;
 
+  console.log(req.body);
   if (!username || !email || !password) {
     return res
       .status(400)
